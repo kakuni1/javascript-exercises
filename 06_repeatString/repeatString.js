@@ -1,14 +1,11 @@
 const repeatString = function (string, num) {
+  if (num < 0) return "ERROR";
   let str = "",
     strCopy = "";
   for (let i = 0; i < num; i++) {
     str = strCopy.concat(str, string);
   }
-  if (num >= 0) {
-    return str;
-  } else {
-    return (str = "ERROR");
-  }
+  return str;
 };
 
 // Do not edit below this line

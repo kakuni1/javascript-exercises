@@ -1,4 +1,4 @@
-const pascal = function (counter) {
+const pascal = (counter) => {
   const currentLine = [1];
   if (counter === 1) {
     return currentLine;
@@ -8,10 +8,10 @@ const pascal = function (counter) {
   previousLine.forEach((number, i) => {
     const rightNeighbor = previousLine[i + 1] ?? 0;
     currentLine.push(number + rightNeighbor);
-  })
+  });
 
   return currentLine;
-}
+};
 
 // Do not edit below this line
 module.exports = pascal;

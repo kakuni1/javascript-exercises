@@ -1,4 +1,4 @@
-const permutations = function (array, index = 0, results = []) {
+const permutations = (array, index = 0, results = []) => {
   if (index == array.length) {
     // We have formed a valid permutation.
 

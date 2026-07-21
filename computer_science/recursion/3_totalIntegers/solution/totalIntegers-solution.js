@@ -1,7 +1,7 @@
 // The extra null check is required since typeof null === "object" evaluates to true
-const isObject = (value) => typeof value === 'object' && value !== null;
+const isObject = (value) => typeof value === "object" && value !== null;
 
-const totalIntegers = function (obj) {
+const totalIntegers = (obj) => {
   let count = 0;
 
   if (!isObject(obj)) {

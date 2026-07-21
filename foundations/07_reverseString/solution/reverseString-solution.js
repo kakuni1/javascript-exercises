@@ -1,10 +1,6 @@
-const reverseString = function (string) {
-  return string.split("").reverse().join("");
-};
+const reverseString = (string) => string.split("").reverse().join("");
 
 module.exports = reverseString;
-
-
 
 // Another approach could be to loop over the string in reverse direction to construct a new one
 /*
@@ -16,4 +12,4 @@ module.exports = reverseString;
     }
     return reversedString;
   };
-*/ 
+*/

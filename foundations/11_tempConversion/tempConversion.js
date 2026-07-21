@@ -1,11 +1,9 @@
-const convertToCelsius = function() {
-};
+const convertToCelsius = () => {};
 
-const convertToFahrenheit = function() {
-};
+const convertToFahrenheit = () => {};
 
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
-  convertToFahrenheit
+  convertToFahrenheit,
 };

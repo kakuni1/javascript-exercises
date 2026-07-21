@@ -13,12 +13,12 @@ const { writeExerciseSpec } = require("./generators/writeExerciseSpec");
  * @typedef {import('plop').NodePlopAPI} Plop
  * @param {Plop} plop
  */
-module.exports = function (plop) {
+module.exports = (plop) => {
   const NEW_DIR_OPTION = "<Make new directory>";
 
   plop.setActionType(
     "createExercise",
-    async function ({ pathForExercise, exerciseName }) {
+    async ({ pathForExercise, exerciseName }) => {
       if (!exerciseName) {
         throw new Error(
           `Invalid exerciseName. Expected: valid string. Actual: "${exerciseName}"`,
@@ -54,7 +54,7 @@ module.exports = function (plop) {
 
   plop.setGenerator("Basic", {
     description: "Create a basic JavaScript exercise.",
-    prompts: async function (inquirer) {
+    prompts: async (inquirer) => {
       async function getPathForExercise(dirPath = []) {
         const exerciseDirs = await getDirsWithExercises(dirPath.join("/"));
 

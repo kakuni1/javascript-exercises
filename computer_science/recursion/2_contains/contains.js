@@ -3,8 +3,7 @@ const contains = (data, input) => {
     return true;
   if (typeof data === "object" && data !== null)
     for (let key in data) {
-      const result = contains(data[key], input);
-      if (result) return true;
+      if (contains(data[key], input)) return true;
     }
   return false;
 };
